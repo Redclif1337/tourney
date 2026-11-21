@@ -1,477 +1,1086 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Десперо — фулстек-разработчик</title>
-    <meta name="description" content="Сайты, которые быстро грузятся, продают и запоминаются. Разработка под ключ: от первого пикселя до деплоя.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        try{
-            var t=localStorage.getItem('despero-theme');
-            if(t)document.documentElement.classList.add(t);
-            var l=localStorage.getItem('despero-lang');
-            if(l)document.documentElement.lang=l;
-        }catch(e){}
-    </script>
-</head>
-<body class="is-loading">
+    
+     <link href="assets/img/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+     
+      <script src="https://kit.fontawesome.com/1e42c71f88.js" crossorigin="anonymous"></script> 
+    
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    
+    
+    
+    
+    
+    
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+    
+    
+    
+    
+    
+    
 
-    <!-- Preloader -->
-    <div id="preloader"><div id="status"></div></div>
+       <title>Tourney</title>
+    </head>
+<body>
 
-    <!-- Home -->
-    <section id="home">
-        <div class="home-overlay"></div>
-        <canvas id="pulse-canvas"></canvas>
-        <div class="side-label">DESPERO.COM</div>
-        <a class="logo" href="#home" aria-label="На главную"><span>&lt; /D-&gt;</span></a>
-        <div class="intro">
-            <div class="start" data-i18n="intro_pre">Привет, я Десперо. Я делаю</div>
-            <h1 data-i18n="intro_h1">Сайты, Которые Работают</h1>
-            <div class="start" data-i18n="intro_sub">Грузятся быстро. Запоминаются сразу. От первого пикселя до деплоя.</div>
+    <header class="header active" id="header">    
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo"> <div class="headline"> <img class="tour_logo" src="assets/img/6.png" ><div class="text_logo"> Tourney</div></div> <div class="search_next_headline"> <nav class="navig"> <a class="nav_link_search" href="#">
+                   <div class="flexbox">
+  <div class="search">
+    
+    <div>
+      <input type="text" placeholder="Search tour . . ." required>
+    </div>
+  </div>
+</div>
+                    </a> </nav></div> </div>
+                
+                
+                  
+                
+                <nav class="navig">
+                <a class="nav_link" href="#TOURS">TOURS</a>
+                <a class="nav_link" href="#GUIDES">GUIDES</a>
+                <a class="nav_link" href="#WHERE TO STAY">WHERE TO STAY</a>
+                 
+                <a class="nav_link" href="#contact">Contact</a> 
+                   
+             
+                    
+                     <a class="nav_link_lang" href="#"><div class="dropdown">
+  <div class="dropbtn">EN</div>
+  <div class="dropdown-content">
+      <a href="#">EN</a>
+      <a href="../sw/highlights.html">SW</a>
+      <a href="../sk/highlights.html">KO</a>
+      <a href="#">RU</a>
+    
+  </div>
+</div></a>
+                  
+                </nav>
+                
+                
+                
+            </div>
         </div>
-        <a href="#services" aria-label="Вниз"><div class="scroll-down"><span>⌄</span></div></a>
-    </section>
-
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <a class="brand" href="#home">&lt; /D-&gt;</a>
-            <ul class="nav-list">
-                <li><a href="#home" data-spy data-i18n="nav_home">Главная</a></li>
-                <li><a href="#services" data-spy data-i18n="nav_services">Услуги</a></li>
-                <li><a href="#portfolio" data-spy data-i18n="nav_works">Работы</a></li>
-                <li><a href="#skills" data-spy data-i18n="nav_skills">Навыки</a></li>
-                <li><a href="#testimonials" data-spy data-i18n="nav_reviews">Отзывы</a></li>
-                <li><a href="#contact" data-spy data-i18n="nav_contact">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
+    
+    
+    <div class="page">
+    
+    
+<div class="intro" id="intro" >
+<div class="container_sl">
+    
+    
+    
+    
+    
+    <div data-am-fadeshow="next-prev-navigation">
 
-    <!-- Services -->
-    <section id="services" class="pfblock alt">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="srv_head">Что Я Делаю Для Вас</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="srv_sub">Четыре вещи, которые я делаю так, что клиенты перестают искать других. Листайте — работы ниже это докажут.</p>
-        </div>
-        <div class="row-4">
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">✦</div>
-                <h3 data-i18n="srv1_t">Веб-дизайн</h3>
-                <div class="iconbox-desc" data-i18n="srv1_d">Посетитель решает за 50 миллисекунд, остаться или уйти. Я делаю так, чтобы эти миллисекунды работали на вас.</div>
-            </div>
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">⌘</div>
-                <h3 data-i18n="srv2_t">Вёрстка и код</h3>
-                <div class="iconbox-desc" data-i18n="srv2_d">Чистый код, быстрая загрузка, ноль отговорок. Один сайт — одинаково безупречен на любом экране.</div>
-            </div>
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">◈</div>
-                <h3 data-i18n="srv3_t">Айдентика</h3>
-                <div class="iconbox-desc" data-i18n="srv3_d">Логотип — это ещё не бренд. Я строю образ, который узнают с первого взгляда — и к которому возвращаются.</div>
-            </div>
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">?</div>
-                <h3 data-i18n="srv4_t">Консультация</h3>
-                <div class="iconbox-desc" data-i18n="srv4_d">Не знаете, с чего начать? Полчаса прямого разговора экономят месяц проб и ошибок.</div>
-            </div>
-        </div>
-    </section>
+		<!-- Radio -->
+		<input type="radio" name="css-fadeshow" id="slide-1" />
+		<input type="radio" name="css-fadeshow" id="slide-2" />
+		<input type="radio" name="css-fadeshow" id="slide-3" />
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="pfblock">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="pf_head">Избранные Работы</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="pf_sub">Никаких макетов — только запущенные проекты. Реальные люди пользуются ими прямо сейчас. Откройте любую карточку и убедитесь.</p>
-        </div>
-        <div class="grid">
-            <a href="project-photogallery.html" class="grid-item reveal">
-                <figure class="effect-bubba">
-                    <img src="assets/images/item-1.jpg" alt="Photo Gallery">
-                    <figcaption>
-                        <h2>Photo <span>Gallery</span></h2>
-                        <p data-i18n="pf1_d">Фотогалерея под ключ — заказ друга, который теперь живёт в продакшене, а не в чате «ну как там?»</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="project-myworkspace.html" class="grid-item reveal">
-                <figure class="effect-bubba">
-                    <img src="assets/images/item-2.jpg" alt="My Workplace">
-                    <figcaption>
-                        <h2>My <span>Workplace</span></h2>
-                        <p data-i18n="pf2_d">Интерактивные рабочие столы на Rainmeter, Lua и canvas. Софт, который делает десктоп личным.</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="project-bitpixel.html" class="grid-item reveal">
-                <figure class="effect-bubba">
-                    <img src="assets/images/item-3.jpg" alt="Bit Pixel">
-                    <figcaption>
-                        <h2>Bit <span>Pixel</span></h2>
-                        <p data-i18n="pf3_d">Сайт Minecraft-сервера, который приводит игроков, а не просто «существует в интернете».</p>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    </section>
+		<!-- Slides -->
+		<div class="fs-slides">
+			<div class="fs-slide" style="background-image: url(img/3.jpeg);">
+				<!-- Add content to images (sample) -->
+				<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+					
+				</div>
+			</div>
+			<div class="fs-slide" style="background-image: url(img/2.jpg);"></div>
+			<div class="fs-slide" style="background-image: url(img/5.jpg);"></div>
+		</div>
 
-    <!-- Skills -->
-    <section id="skills" class="pfblock alt">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="sk_head">Цифры, А Не Слова</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="sk_sub">Проценты ниже — честные. Поэтому ни один не равен сотне: всегда есть куда расти, и мне это нравится.</p>
+		<!-- Quick Navigation -->
+		<div class="fs-quick-nav">
+			<label class="fs-quick-btn" for="slide-1"></label>
+			<label class="fs-quick-btn" for="slide-2"></label>
+			<label class="fs-quick-btn" for="slide-3"></label>
+		</div>
+		
+		<!-- Prev Navigation -->
+		<div class="fs-prev-nav">
+			<label class="fs-prev-btn" for="slide-1"></label>
+			<label class="fs-prev-btn" for="slide-2"></label>
+			<label class="fs-prev-btn" for="slide-3"></label>
+		</div>
+		
+		<!-- Next Navigation -->
+		<div class="fs-next-nav">
+			<label class="fs-next-btn" for="slide-1"></label>
+			<label class="fs-next-btn" for="slide-2"></label>
+			<label class="fs-next-btn" for="slide-3"></label>
+		</div>
+
+	</div>
+    
+    
+    
+    
+    
+    
+    <div class="intro_inner">
+        <div class="intro_logo"> <img class="intro_logo_img" src="assets/img/7.png">
         </div>
-        <div class="row-4 skills">
-            <div class="skill reveal">
-                <div class="chart" data-percent="80">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
+        <h2 class="intro_suptitle"> Make your journey <br>essential  with</h2>
+     <h1 class="intro_title"> TOURNEY</h1>
+        
+        
+        
+    </div>
+    
+</div>
+    
+    
+    
+    
+</div><!-- /.intro -->
+
+        
+        
+        
+<section class="section">
+    <div class="container">
+        
+         
+        
+    
+    
+    <div class="services">
+        <a href="#TOURS">
+    <div class="services_item services_item--border"> 
+        <img class="services_icon" src="assets/images/services/seo.png" alt="">
+        
+     <div class="services_title">Tours</div>
+        <div class="services_text">Experience Earths Hidden Magic, a beautifully unspoiled parts of our planet where life moves at its own pace.</div>
+            </div> </a>
+         <a href="#GUIDES">
+     <div class="services_item2 services_item2--border"> 
+        <img class="services_icon" src="assets/images/services/webdesign.png" alt="">
+        
+    <div class="services_title">Guides</div>
+        <div class="services_text">Choose one of magic Guides in any way you prefer. Over 190.</div>
+             </div> </a>
+        <a href="#WHERE TO STAY">
+        <div class="services_item2 services_item2--border"> 
+        <img class="services_icon" src="assets/images/services/css-html.png" alt="">
+        
+    <div class="services_title">Where to stay</div>
+        <div class="services_text">Comfort or proximity to nature. Talk to nature in your dream</div>
+             </div></a>
+        
+    
+        </div>
+       
+    
+    </div><!-- /.container -->
+    </section>        
+        
+        
+        
+        
+       
+        
+         <section class="section2">
+        
+        <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            North America
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            South America
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Europe
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Asia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/africa.png" alt="Image" class="img-fluid">
+                            Africa
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/australia.png" alt="Image" class="img-fluid">
+                            Australia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/antartica.png" alt="Image" class="img-fluid">
+                            Antartica
+                        </a>
+                    </li>
+                </ul>
+        
+        </section>
+
+<section class="section2" id="TOURS">
+    <div class="container">
+      <div class="section_header" >
+        <h3 class="section_suptitle">Open your mind</h3>
+        <h2 class="section_title2">
+Feel for the first time the life chosen your personal tour
+ - Discover the magic of Earth's hidden beauty</h2>
+          <div class="section_text">
+          <p>Enjoy the peace and serenity of Earths Hidden Magic on a 
+              visit to those spellbinding regions.
+ </p>
+          </div>
+        </div> 
+        
+        <div class="card0">
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/highlights/gavin-sheehan-kayaking-IHH-img-3.webp" alt=""><p>Iceland magic</p>
+            </div> 
+            <div class="card_text">From source to mouth : kayaking with friends</div>
+            </div>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/highlights/header-zip-it-lough-key-roscommon.webp" alt=""><p>Family Tour to Slovenia</p>
+                </div><div class="card_text">Things to do in Slovenia with whole family</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/highlights/HEADER-Castle-at-Sunset-Cloughoughter-Lough-Cavan.webp" alt="">
+                <p>Netherlands</p>
                 </div>
-                <h3 data-i18n="sk1">Программирование</h3>
+            <div class="card_text">12 scenic walks in the heart of Netherlands nature</div>
+            </div></div>
             </div>
-            <div class="skill reveal">
-                <div class="chart" data-percent="57">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
+        
+    </div> <!-- /.container -->
+     </section>
+    
+     <section class="section">
+        
+        
+          
+                        
+        
+        
+        
+       
+    
+    <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Check In Date</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+    
+    
+    
+    
+    </section>
+
+    
+    <div class="statistics">
+    <div class="container">
+        
+        <div class="stat">
+        <div class="stat_item">
+            <div class="stat_count">363</div>
+            <div class="stat_text">Trip</div>
+            </div>
+        
+        <div class="stat_item">
+            <div class="stat_count">272</div>
+            <div class="stat_text">place to stay</div>
+            </div>
+            
+        <div class="stat_item">
+            <div class="stat_count">115</div>
+            <div class="stat_text">catering</div>
+            </div>
+            
+        <div class="stat_item">
+            <div class="stat_count">99</div>
+            <div class="stat_text"> faunas and floras</div>
+            </div>
+            
+        <div class="stat_item">
+            <div class="stat_count">+1</div>
+            <div class="stat_text">changed mind</div>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    <section class="section section--bigmap">
+    <div class="container_map">
+        
+    
+        
+       
+    
+    <div class="section_header" >
+        <h3 class="section_suptitle">Unique adventures</h3>
+        <h2 class="section_title">A free lifestyle</h2>
+          
+        </div> 
+        
+        <div class="devices">
+        
+        <img class="devices_item" src="assets/img/6.png" alt="">
+        
+            </div>
+    
+         </div>  
+    </section>
+        
+        
+        
+        
+        <section class="section3" id="GUIDES">
+    <div class="container">
+      <div class="section_header" >
+        <h3 class="section_suptitle">Open the new way</h3>
+        <h2 class="section_title2">
+Guides in any destination of our planet</h2>
+          <div class="section_text">
+          <p> Cruise down scenic waterways, explore countryside walking trails and enjoy incredible outdoor adventures.
+ </p>
+              
+        <div class="btns_guide">      <a class="btn_guide1" href="#">#Things to do</a>
+              <a class="btn_guide1" href="#">#Festivals & events</a>
+              <a class="btn_guide1" href="#">#Food and drink</a>
+              </div>
+              
+          </div>
+        </div> 
+        
+        <div class="card0">
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/glencar-lake-county-leitrim.webp" alt=""><div class="card_info"> <div  class="card_name"> <p class="price">HISTORIC HOUSE </p></div> <div class="card_price"><p class="price"> 200$</p></div></div>
+            </div> 
+            <div class="card_text">Follow Watson the dog in Ireland </div>
+            </div>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/Cruisers-Moored-At-Leitrim-Village.webp" alt=""><div class="card_info"> <div  class="card_name"> <p>HISTORY AND HERITAGE</p></div> <div class="card_price"><p class="price"> 220$</p></div></div>
+                </div><div class="card_text">The best ways to enjoy a holiday in Leitrim</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/boat-cruise-river-shannon.webp" alt="">
+               <div class="card_info"> <div  class="card_name">  <p>ON THE WATER</p></div> <div class="card_price"><p class="price"> 230$</p></div></div>
                 </div>
-                <h3 data-i18n="sk2">Дизайн</h3>
+            <div class="card_text">12 scenic walks in Iceland </div>
+            </div></div>
+            
+            
+            <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/highlights/gavin-sheehan-kayaking-IHH-img-3.webp" alt=""><div class="card_info"> <div  class="card_name">  <p>on the water</p></div> <div class="card_price"><p class="price"> 230$</p></div></div>
+            </div> 
+            <div class="card_text">From source to mouth : kayaking the Shannon</div>
             </div>
-            <div class="skill reveal">
-                <div class="chart" data-percent="61">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/highlights/header-zip-it-lough-key-roscommon.webp" alt=""> <div class="card_info"> <div  class="card_name">  <p>HEALTH AND WELLBEING</p></div> <div class="card_price"><p class="price"> 244$</p></div></div>
+                </div><div class="card_text">Things to do in Polish </div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/highlights/HEADER-Castle-at-Sunset-Cloughoughter-Lough-Cavan.webp" alt="">
+                 <div class="card_info"> <div  class="card_name">  <p>FREE THINGS TO DO</p></div> <div class="card_price"><p class="price"> 455$</p></div></div>
                 </div>
-                <h3 data-i18n="sk3">Маркетинг</h3>
+            <div class="card_text">12 scenic walks in Netherland</div>
+            </div></div>
+            
+            
+            <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/GregOShea_Header.webp" alt=""><div class="card_info"> <div  class="card_name">  <p>FREE THINGS TO DO in Spain</p></div> <div class="card_price"><p class="price"> 655$</p></div></div>
+            </div> 
+            <div class="card_text">Good opportunity to meet interesting people. </div>
             </div>
-            <div class="skill reveal">
-                <div class="chart" data-percent="75">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/header-foodie-experiences.webp" alt=""><div class="card_info"> <div  class="card_name"> <p>FOOD EXPERIENCES at Italy</p></div> <div class="card_price"><p class="price"> 555$</p></div></div>
+                </div><div class="card_text">Delicious food in every region of italy</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/header-cavan.webp" alt="">
+               <div class="card_info"> <div  class="card_name">  <p>WALKING AND HIKING </p></div> <div class="card_price"><p class="price"> 565$</p></div></div>
                 </div>
-                <h3>UI / UX</h3>
+            <div class="card_text">5 great walks through the Portugal</div>
+            </div></div>
+            
+            
+            <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/header-cavan-burren-park-hike.webp" alt=""><div class="card_info"> <div  class="card_name">  <p>WALKING AND HIKING </p></div> <div class="card_price"><p class="price"> 564$</p></div></div>
+            </div> 
+            <div class="card_text">6 amazing walks and hikes in Romania</div>
             </div>
-        </div>
-    </section>
-
-    <!-- CallToAction -->
-    <section class="calltoaction">
-        <div class="reveal">
-            <h2 data-i18n="cta_h">Есть Идея? Давайте Воплотим.</h2>
-            <div class="calltoaction-desc" data-i18n="cta_d">Открыт для фриланс-проектов. Отвечаю в течение 24 часов — и нет, это не маркетинговая присказка.</div>
-            <a href="#contact" class="btn-lg" data-i18n="cta_btn">Работать Со Мной</a>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="pfblock alt">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="tst_head">Слова Клиентов</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="tst_sub">Лучшая реклама — когда о тебе говорят другие. Без купюр, без оплаты, без сценариев.</p>
-        </div>
-        <div class="cbp-qtrotator reveal">
-            <div class="cbp-qtprogress"></div>
-            <div class="cbp-qtcontent is-current">
-                <div class="avatar">D</div>
-                <blockquote>
-                    <p data-i18n="tst1_q">Десперо понял, чего я хочу, быстрее, чем я сам это объяснил. Сайт, который он собрал, теперь работает на мой бизнес.</p>
-                    <footer data-i18n="tst1_f">Клиент, Photo Gallery</footer>
-                </blockquote>
             </div>
-            <div class="cbp-qtcontent">
-                <div class="avatar">D</div>
-                <blockquote>
-                    <p data-i18n="tst2_q">Стопроцентная удовлетворённость — редкая штука. Он получил её с первой попытки и без тысячи правок.</p>
-                    <footer data-i18n="tst2_f">Клиент, My Workplace</footer>
-                </blockquote>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/header-irelands-hidden-heartlands-adventure.webp" alt=""><div class="card_info"> <div  class="card_name">  <p>ADVENTURE AND SPORTS </p></div> <div class="card_price"><p class="price"> 765$</p></div></div>
+                </div><div class="card_text">Discover your new adventure in germany</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/guides/strokestown-house-and-park-co-roscommon.webp" alt="">
+                <div class="card_info"> <div  class="card_name"> <p>THE GREAT OUTDOORS</p></div> <div class="card_price"><p class="price"> 770$</p></div></div>
+                </div>
+            <div class="card_text">Things to do in french regions on your next visit</div>
+            </div></div>
+            
+            
+            
             </div>
-        </div>
+        
+    </div> <!-- /.container -->
     </section>
-
-    <!-- Contact -->
-    <section id="contact" class="pfblock">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="ct_head">Напишите Мне</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="ct_sub">Три поля, две минуты, одно сообщение. Идея — ваша; всё остальное — моё.</p>
+        
+        
+        <div class="section section--gray">
+      <div class="container">
+        
+          
+          <div class="reviews">
+              
+              
+             <div class="reviews_item">
+                 <img class="reviews_photo" src="assets/images/kejt-duglas-uiggin.jpg" alt="">
+                <div class="reviews_text">“"There's something magical about it: you're leaving
+one person, and you come back completely different"”</div>
+                 <div class="reviews_author">Kate  Wiggin</div>
+              </div>
+          
+          </div>
+        
         </div>
-        <!-- Форма — элемент дизайна: анимация есть, отправки нет -->
-        <form id="contact-form" class="reveal" novalidate>
-            <input type="text" name="c_name" data-i18n-ph="ph_name" placeholder="Ваше имя">
-            <input type="email" name="c_email" data-i18n-ph="ph_email" placeholder="Email — куда придёт мой ответ">
-            <textarea name="c_message" rows="7" data-i18n-ph="ph_msg" placeholder="Что хотите создать?"></textarea>
-            <button type="submit" class="btn-lg btn-send" data-i18n="ct_btn">Отправить Сообщение</button>
-        </form>
+    
+    </div>
+        
+        
+        
+        <section class="section2" id="WHERE TO STAY">
+    <div class="container">
+      <div class="section_header" >
+        <h3 class="section_suptitle">Open the new home</h3>
+        <h2 class="section_title2">
+My little home in charming ireland</h2>
+          <div class="section_text">
+          <p>Stay on the water or hide away in a lakeside retreat. From brilliant  countryside manors to 5 star hotels - find your perfect base for exploring.
+ </p>
+              
+        <div class="btns_little-home">      <a class="btn_guide1" href="#">#Hotel</a>
+              <a class="btn_guide1" href="#">#Self catering</a>
+              <a class="btn_guide1" href="#">#Camping</a>
+              </div>
+              
+          </div>
+        </div> 
+        
+        <div class="card0">
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/aerial-view.webp" alt=""><p>SELF CATERING</p>
+            </div> 
+            <div class="card_text">Johnsfort</div>
+            </div>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/the-old-rectory-exterior.webp" alt=""><p>BED AND BREAKFAST</p>
+                </div><div class="card_text">The Old Rectory (Ballinamore)</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/view-of-cabin.webp" alt="">
+                <p>CAMPING</p>
+                </div>
+            <div class="card_text">Baseglamp</div>
+            </div></div>
+            
+            
+            <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/silver-line-cruisers-river-queen-boat-on-the-river-shannon.webp" alt=""><p>ACTIVITY HOLIDAY</p>
+            </div> 
+            <div class="card_text">Silver Line Cruisers</div>
+            </div>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/pod-view.webp" alt=""><p>CAMPING</p>
+                </div><div class="card_text">Kilbane Glamping</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/kitchen-area.webp" alt="">
+                <p>SELF CATERING</p>
+                </div>
+            <div class="card_text">Heron Brook Lodge</div>
+            </div></div>
+            
+            
+            <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/front-view.webp" alt=""><p>HOTEL</p>
+            </div> 
+            <div class="card_text">County Arms Hotel </div>
+            </div>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/front-view-of-house.webp" alt=""><p>SELF CATERING</p>
+                </div><div class="card_text">Loughananna House</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/front-exterior.webp" alt="">
+                <p>GLAMPING</p>
+                </div>
+            <div class="card_text">Mount Briscoe</div>
+            </div></div>
+            
+            
+            <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/campervan-sideview.webp" alt=""><p>SELF CATERING</p>
+            </div> 
+            <div class="card_text">Rambling Rover</div>
+            </div>
+            </div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/exterior.webp" alt=""><p>SELF CATERING</p>
+                </div><div class="card_text">Drumhierny Woodland Hideaway</div> </div></div>
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/little_home/view-from-river.webp" alt="">
+                <p>ACTIVITY HOLIDAY</p>
+                </div>
+            <div class="card_text">International Fishing Centre</div>
+            </div></div>
+            
+            
+            
+            </div>
+        
+    </div> <!-- /.container -->
     </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="social">
-            <li><a href="https://vk.ru/" target="_blank" rel="noopener" aria-label="ВКонтакте">
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.7 17.3c-5.2 0-8.2-3.6-8.3-9.5h2.6c.1 4.4 2 6.2 3.5 6.6V7.8h2.5v3.8c1.5-.2 3-1.8 3.6-3.8h2.5c-.4 2.5-2 4.1-3.2 4.8 1.2.6 3 2 3.7 4.7h-2.8c-.5-1.9-2-3.4-3.8-3.6v3.6h-.3z"/></svg></span>
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.7 17.3c-5.2 0-8.2-3.6-8.3-9.5h2.6c.1 4.4 2 6.2 3.5 6.6V7.8h2.5v3.8c1.5-.2 3-1.8 3.6-3.8h2.5c-.4 2.5-2 4.1-3.2 4.8 1.2.6 3 2 3.7 4.7h-2.8c-.5-1.9-2-3.4-3.8-3.6v3.6h-.3z"/></svg></span>
-            </a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Ютуб">
-                <span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"/></svg></span>
-                <span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"/></svg></span>
-            </a></li>
-            <li><a href="https://web.telegram.org" target="_blank" rel="noopener" aria-label="Телеграм">
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21.9 4.6 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9-8.2c.4-.3-.1-.5-.6-.2L6.5 12.6l-4.8-1.5c-1-.3-1-1 .2-1.5l18.8-7.3c.9-.3 1.6.2 1.2 2.3z"/></svg></span>
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21.9 4.6 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9-8.2c.4-.3-.1-.5-.6-.2L6.5 12.6l-4.8-1.5c-1-.3-1-1 .2-1.5l18.8-7.3c.9-.3 1.6.2 1.2 2.3z"/></svg></span>
-            </a></li>
-        </ul>
-        <p class="heart"><span data-i18n="foot_made1">Сделано с</span> <span class="heart-icon">❤</span> <span data-i18n="foot_made2">и кофеином в Кибермире</span></p>
-        <p class="copyright" data-i18n="foot_copy">© 2026 Десперо · 1–5 — смена темы, для тех кто в теме</p>
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    <section class="section">
+      <div class="container">
+        
+          <div class="section_header" >
+        <h3 class="section_suptitle">#keep discovering </h3>
+        <h2 class="section_title">Explore on foot</h2>
+          
+        <div class="section_text">
+          <p>Lace up your walking boots and connect with fellow trail-lovers while soaking up some of the best natural landscapes in Ireland's Hidden Heartlands.</p>
+          </div>
+        </div>
+        
+          
+          
+          <div class="card0">
+              
+        <div class="card_item">
+            <div class="card_inner">
+            <div class="card_img">
+                <img src="assets/images/on_foot/scale_127.jpg" alt="">
+            </div> 
+            <div class="card_text">
+                
+                </div>
+            </div>
+            
+              <div class="card_info">
+            <div class="card_name">WALKING AND HIKING</div>
+            <div class="card_prof">Killeshandra Camino Calling</div>
+            </div>
+          </div><!-- /.card_item -->
+          
+        <div class="card_item">
+            <div class="card_inner">
+           
+            <div class="card_img">
+                <img src="assets/images/on_foot/scale_129.jpg" alt="">
+            </div> 
+            </div>
+            <div class="card_info">
+            <div class="card_name">NATURE AND WILDLIFE</div>
+            <div class="card_prof">Carlow Autumn Walking Festival</div>
+            </div>
+            </div>
+            
+        <div class="card_item">
+            <div class="card_inner">
+                
+            <div class="about_img">
+            <div class="card_img">
+                <img src="assets/images/on_foot/scale_128.jpg" alt="">
+            </div> 
+                </div>
+            </div>
+            <div class="card_info">
+            <div class="card_name">THE GREAT OUTDOORS</div>
+            <div class="card_prof">Ballyhoura Walking Festival 2024</div>
+            </div>
+            </div>
+              
+          </div><!-- /.card -->
+          
+          
+        </div><!-- /.container -->
+    </section>
+    
+    
+    
+    
+    
+    
+        
+        <section class="section">
+    <div class="container">
+            
+        <div class="section_header" >
+        <h3 class="section_suptitle">Life is here</h3>
+        <h2 class="section_title">Some of our love</h2>
+          
+        <div class="section_text">
+          <p>gallery</p>
+          </div>
+        </div>
+            </div>
+            
+            <div class="works">
+        <div class="works_col"> 
+                <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/1.jpg" alt="">
+                    <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                    
+                    
+                    
+                 </div>
+            
+            <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/2.jpg" alt="">
+                    <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                 </div>
+            
+                </div>
+        <div class="works_col"> <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/3.jpg" alt="">
+                    <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                    
+                    
+                    
+                 </div>
+            
+            <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/4.jpg" alt="">
+                    <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                 </div></div>
+        <div class="works_col">
+            <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/5.jpg" alt="">
+                    <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                    
+                    
+                    
+                 </div>
+                </div>
+        <div class="works_col"> 
+            <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/6.jpg" alt="">
+                    <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                    
+                    
+                    
+                 </div>
+            
+            <div class="works_item">
+            <img class="works_image" src="assets/images/gallery/7.jpg" alt="">
+                   <div class="works_info">
+                        <div class="works_title">HIDDEN TOURNEY</div>
+                        <div class="works_text">DISCOVER THE MAGIC OF EARTH </div>
+            
+                    </div>
+                 </div></div>
+        </div>
+            
+    </section>
+        
+    <div class="section5 ">
+      <div class="container">
+        
+          
+          <div class="reviews">
+              
+              
+             <div class="reviews_item">
+                 <img class="reviews_photo" src="assets/images/bernar.jpg" alt="">
+                <div class="reviews_text">“Traveling means developing”</div>
+                 <div class="reviews_author">Pierre Bernard</div>
+              </div>
+          
+          </div>
+        
+        </div>
+    
+    </div>
+    
+    
+    <section class="section section--clients">
+    <div class="container">
+        
+        <div class="section_header" >
+        <h3 class="section_suptitle">Happy Clients</h3>
+        <h2 class="section_title">Our celebrities</h2>
+          </div>
+        
+        <div class="clients">
+            <div class="clients_item">
+            <img class="clients_photo" src="assets/images/celebrities/c0f9ffea2e9c3ddc89eff3bf18da51a6.jpg" alt="">
+                <div class="clients_content">
+                <div class="clients_name">Dolph Lundgren;</div>
+                <div class="clients_prof">summer 2006</div>
+                <div class="clients_text"></div>
+                </div>
+            </div>
+            
+        <div class="clients_item">
+            <img class="clients_photo" src="assets/images/celebrities/Carl-Von-Clausewitz-Author.jpg" alt="">
+                <div class="clients_content">
+                <div class="clients_name">Carl Clausewitz</div>
+                <div class="clients_prof">spring 1822</div>
+                <div class="clients_text"></div>
+                </div>
+            </div>
+            
+            <div class="clients_item">
+            <img class="clients_photo" src="assets/images/celebrities/4e85e1138a96915abbd58f9918a4488f.jpeg" alt="">
+                <div class="clients_content">
+                <div class="clients_name">Jack Kerouac</div>
+                <div class="clients_prof">summer 1950</div>
+                <div class="clients_text"></div>
+                </div>
+            </div>
+            
+            <div class="clients_item">
+            <img class="clients_photo" src="assets/images/celebrities/3153533-sam%20lake%20headshot.jpg" alt="">
+                <div class="clients_content">
+                <div class="clients_name">Sami  Järvi</div>
+                <div class="clients_prof">winter 2000</div>
+                <div class="clients_text"></div>
+                </div>
+            </div>
+            
+        </div><!-- /.clients -->
+        
+        </div><!-- /.container -->
+    </section>
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    <footer class="footer">
+    <div class="container">
+        
+        <div class="footer_inner">
+        <div class="footer_col footer_col--first">
+            <div class="footer_logo">TOURNEY</div>
+            <div class="footer_text">From EAST stunning scenery to WEST natural beauty, experience EARTH'S depths . Discover magnificent forests, cities, unique landscapes and charming villages.</div>
+            
+            <div class="footer_social">
+            <div class="footer_social-header">
+                <b>157k</b> followers</div>
+            <div class="footer_social-content">
+                Follow Us:
+                <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+                </a>
+                </div>
+            </div>
+            
+            <form class="subscribe" action="/" method="post">
+               <input class="subscribe_input" type="email" name="name" placeholder="Your Email...">
+                <button class="subscribe_btn" id="contact" type="submit">Subscribe</button>
+            </form>
+                  
+            </div><!-- /.footer_col -->
+            
+            <div class="footer_col footer_col--second">
+            <div class="footer_title">Blogs</div>
+                
+                <div class="blogs">
+                <div class="blogs_item">
+                    <img class="blogs_img" src="assets/images/iStock-598132684-440x264.jpg" alt="">
+                    <div class="blogs_content">
+                    <a class="blogs_title" href="#">Community of friends</a>
+                    <div class="blogs_date">Jun 9, 2023</div>
+                        </div>
+                    </div>
+                    
+                    <div class="blogs_item">
+                    <img class="blogs_img" src="assets/images/iStock-2.jpg" alt="">
+                    <div class="blogs_content">
+                    <a class="blogs_title" href="#">Couple tours</a>
+                    <div class="blogs_date">May 7, 2022</div>
+                        </div>
+                    </div>
+                    
+                    <div class="blogs_item">
+                    <img class="blogs_img" src="assets/images/Fotolia_66563258_Subscription_Monthly_M-768x512.jpg" alt="">
+                    <div class="blogs_content">
+                    <a class="blogs_title" href="#">A unique experience</a>
+                    <div class="blogs_date">Mar 14, 2021</div>
+                        </div>
+                    </div>
+                    
+                </div><!-- /.blogs -->
+                </div>
+            
+            <div class="footer_col footer_col--third">
+            <div class="footer_title">Instagram</div>
+                
+                <div class="instagram">
+                <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/1.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/2.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/3.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/4.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/5.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/6.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/7.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/8.jpg" alt="">
+                    </a>
+                    <a class="instagram_item" href="#" target="_blank">
+                    <img src="assets/images/instagram/9.jpg" alt="">
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div><!-- /.footer_inner -->
+        
+        <div class="copyright">
+        © 2025 TOURNEY 
+        </div>
+        
+        
+        </div><!-- /.container -->
     </footer>
+    
+    </div><!-- /.page -->
+    
+        
+    
+ <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             
+    <script src="js/popper.min.js"></script>                           
+    <script src="js/bootstrap.min.js"></script>                 
+    <script src="js/datepicker.min.js"></script>                
+    <script src="js/jquery.singlePageNav.min.js"></script>      
+    <script src="slick/slick.min.js"></script>                  
+    <script src="js/jquery.scrollTo.min.js"></script>           
+    <script> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="assets/js/app.js/"></script>
+    
+    
+    
+    </body></html>
 
-    <div class="scroll-up"><a href="#home" aria-label="Наверх">⌃</a></div>
 
-    <script src="assets/js/index.js"></script>
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Десперо — фулстек-разработчик</title>
-    <meta name="description" content="Сайты, которые быстро грузятся, продают и запоминаются. Разработка под ключ: от первого пикселя до деплоя.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        try{
-            var t=localStorage.getItem('despero-theme');
-            if(t)document.documentElement.classList.add(t);
-            var l=localStorage.getItem('despero-lang');
-            if(l)document.documentElement.lang=l;
-        }catch(e){}
-    </script>
-</head>
-<body class="is-loading">
-
-    <!-- Preloader -->
-    <div id="preloader"><div id="status"></div></div>
-
-    <!-- Home -->
-    <section id="home">
-        <div class="home-overlay"></div>
-        <canvas id="pulse-canvas"></canvas>
-        <div class="side-label">DESPERO.COM</div>
-        <a class="logo" href="#home" aria-label="На главную"><span>&lt; /D-&gt;</span></a>
-        <div class="intro">
-            <div class="start" data-i18n="intro_pre">Привет, я Десперо. Я делаю</div>
-            <h1 data-i18n="intro_h1">Сайты, Которые Работают</h1>
-            <div class="start" data-i18n="intro_sub">Грузятся быстро. Запоминаются сразу. От первого пикселя до деплоя.</div>
-        </div>
-        <a href="#services" aria-label="Вниз"><div class="scroll-down"><span>⌄</span></div></a>
-    </section>
-
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <a class="brand" href="#home">&lt; /D-&gt;</a>
-            <ul class="nav-list">
-                <li><a href="#home" data-spy data-i18n="nav_home">Главная</a></li>
-                <li><a href="#services" data-spy data-i18n="nav_services">Услуги</a></li>
-                <li><a href="#portfolio" data-spy data-i18n="nav_works">Работы</a></li>
-                <li><a href="#skills" data-spy data-i18n="nav_skills">Навыки</a></li>
-                <li><a href="#testimonials" data-spy data-i18n="nav_reviews">Отзывы</a></li>
-                <li><a href="#contact" data-spy data-i18n="nav_contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Services -->
-    <section id="services" class="pfblock alt">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="srv_head">Что Я Делаю Для Вас</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="srv_sub">Четыре вещи, которые я делаю так, что клиенты перестают искать других. Листайте — работы ниже это докажут.</p>
-        </div>
-        <div class="row-4">
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">✦</div>
-                <h3 data-i18n="srv1_t">Веб-дизайн</h3>
-                <div class="iconbox-desc" data-i18n="srv1_d">Посетитель решает за 50 миллисекунд, остаться или уйти. Я делаю так, чтобы эти миллисекунды работали на вас.</div>
-            </div>
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">⌘</div>
-                <h3 data-i18n="srv2_t">Вёрстка и код</h3>
-                <div class="iconbox-desc" data-i18n="srv2_d">Чистый код, быстрая загрузка, ноль отговорок. Один сайт — одинаково безупречен на любом экране.</div>
-            </div>
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">◈</div>
-                <h3 data-i18n="srv3_t">Айдентика</h3>
-                <div class="iconbox-desc" data-i18n="srv3_d">Логотип — это ещё не бренд. Я строю образ, который узнают с первого взгляда — и к которому возвращаются.</div>
-            </div>
-            <div class="iconbox reveal">
-                <div class="iconbox-icon">?</div>
-                <h3 data-i18n="srv4_t">Консультация</h3>
-                <div class="iconbox-desc" data-i18n="srv4_d">Не знаете, с чего начать? Полчаса прямого разговора экономят месяц проб и ошибок.</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="pfblock">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="pf_head">Избранные Работы</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="pf_sub">Никаких макетов — только запущенные проекты. Реальные люди пользуются ими прямо сейчас. Откройте любую карточку и убедитесь.</p>
-        </div>
-        <div class="grid">
-            <a href="project-photogallery.html" class="grid-item reveal">
-                <figure class="effect-bubba">
-                    <img src="assets/images/item-1.jpg" alt="Photo Gallery">
-                    <figcaption>
-                        <h2>Photo <span>Gallery</span></h2>
-                        <p data-i18n="pf1_d">Фотогалерея под ключ — заказ друга, который теперь живёт в продакшене, а не в чате «ну как там?»</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="project-myworkspace.html" class="grid-item reveal">
-                <figure class="effect-bubba">
-                    <img src="assets/images/item-2.jpg" alt="My Workplace">
-                    <figcaption>
-                        <h2>My <span>Workplace</span></h2>
-                        <p data-i18n="pf2_d">Интерактивные рабочие столы на Rainmeter, Lua и canvas. Софт, который делает десктоп личным.</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="project-bitpixel.html" class="grid-item reveal">
-                <figure class="effect-bubba">
-                    <img src="assets/images/item-3.jpg" alt="Bit Pixel">
-                    <figcaption>
-                        <h2>Bit <span>Pixel</span></h2>
-                        <p data-i18n="pf3_d">Сайт Minecraft-сервера, который приводит игроков, а не просто «существует в интернете».</p>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="pfblock alt">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="sk_head">Цифры, А Не Слова</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="sk_sub">Проценты ниже — честные. Поэтому ни один не равен сотне: всегда есть куда расти, и мне это нравится.</p>
-        </div>
-        <div class="row-4 skills">
-            <div class="skill reveal">
-                <div class="chart" data-percent="80">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
-                </div>
-                <h3 data-i18n="sk1">Программирование</h3>
-            </div>
-            <div class="skill reveal">
-                <div class="chart" data-percent="57">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
-                </div>
-                <h3 data-i18n="sk2">Дизайн</h3>
-            </div>
-            <div class="skill reveal">
-                <div class="chart" data-percent="61">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
-                </div>
-                <h3 data-i18n="sk3">Маркетинг</h3>
-            </div>
-            <div class="skill reveal">
-                <div class="chart" data-percent="75">
-                    <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="60"/><circle class="bar" cx="70" cy="70" r="60"/></svg>
-                    <span class="percent">0</span>
-                </div>
-                <h3>UI / UX</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- CallToAction -->
-    <section class="calltoaction">
-        <div class="reveal">
-            <h2 data-i18n="cta_h">Есть Идея? Давайте Воплотим.</h2>
-            <div class="calltoaction-desc" data-i18n="cta_d">Открыт для фриланс-проектов. Отвечаю в течение 24 часов — и нет, это не маркетинговая присказка.</div>
-            <a href="#contact" class="btn-lg" data-i18n="cta_btn">Работать Со Мной</a>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="pfblock alt">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="tst_head">Слова Клиентов</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="tst_sub">Лучшая реклама — когда о тебе говорят другие. Без купюр, без оплаты, без сценариев.</p>
-        </div>
-        <div class="cbp-qtrotator reveal">
-            <div class="cbp-qtprogress"></div>
-            <div class="cbp-qtcontent is-current">
-                <div class="avatar">D</div>
-                <blockquote>
-                    <p data-i18n="tst1_q">Десперо понял, чего я хочу, быстрее, чем я сам это объяснил. Сайт, который он собрал, теперь работает на мой бизнес.</p>
-                    <footer data-i18n="tst1_f">Клиент, Photo Gallery</footer>
-                </blockquote>
-            </div>
-            <div class="cbp-qtcontent">
-                <div class="avatar">D</div>
-                <blockquote>
-                    <p data-i18n="tst2_q">Стопроцентная удовлетворённость — редкая штука. Он получил её с первой попытки и без тысячи правок.</p>
-                    <footer data-i18n="tst2_f">Клиент, My Workplace</footer>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="pfblock">
-        <div class="pfblock-header reveal">
-            <h2 data-i18n="ct_head">Напишите Мне</h2>
-            <div class="pfblock-line"></div>
-            <p class="pfblock-subtitle" data-i18n="ct_sub">Три поля, две минуты, одно сообщение. Идея — ваша; всё остальное — моё.</p>
-        </div>
-        <!-- Форма — элемент дизайна: анимация есть, отправки нет -->
-        <form id="contact-form" class="reveal" novalidate>
-            <input type="text" name="c_name" data-i18n-ph="ph_name" placeholder="Ваше имя">
-            <input type="email" name="c_email" data-i18n-ph="ph_email" placeholder="Email — куда придёт мой ответ">
-            <textarea name="c_message" rows="7" data-i18n-ph="ph_msg" placeholder="Что хотите создать?"></textarea>
-            <button type="submit" class="btn-lg btn-send" data-i18n="ct_btn">Отправить Сообщение</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="social">
-            <li><a href="https://vk.ru/" target="_blank" rel="noopener" aria-label="ВКонтакте">
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.7 17.3c-5.2 0-8.2-3.6-8.3-9.5h2.6c.1 4.4 2 6.2 3.5 6.6V7.8h2.5v3.8c1.5-.2 3-1.8 3.6-3.8h2.5c-.4 2.5-2 4.1-3.2 4.8 1.2.6 3 2 3.7 4.7h-2.8c-.5-1.9-2-3.4-3.8-3.6v3.6h-.3z"/></svg></span>
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.7 17.3c-5.2 0-8.2-3.6-8.3-9.5h2.6c.1 4.4 2 6.2 3.5 6.6V7.8h2.5v3.8c1.5-.2 3-1.8 3.6-3.8h2.5c-.4 2.5-2 4.1-3.2 4.8 1.2.6 3 2 3.7 4.7h-2.8c-.5-1.9-2-3.4-3.8-3.6v3.6h-.3z"/></svg></span>
-            </a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Ютуб">
-                <span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"/></svg></span>
-                <span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"/></svg></span>
-            </a></li>
-            <li><a href="https://web.telegram.org" target="_blank" rel="noopener" aria-label="Телеграм">
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21.9 4.6 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9-8.2c.4-.3-.1-.5-.6-.2L6.5 12.6l-4.8-1.5c-1-.3-1-1 .2-1.5l18.8-7.3c.9-.3 1.6.2 1.2 2.3z"/></svg></span>
-                <span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21.9 4.6 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9-8.2c.4-.3-.1-.5-.6-.2L6.5 12.6l-4.8-1.5c-1-.3-1-1 .2-1.5l18.8-7.3c.9-.3 1.6.2 1.2 2.3z"/></svg></span>
-            </a></li>
-        </ul>
-        <p class="heart"><span data-i18n="foot_made1">Сделано с</span> <span class="heart-icon">❤</span> <span data-i18n="foot_made2">и кофеином в Кибермире</span></p>
-        <p class="copyright" data-i18n="foot_copy">© 2026 Десперо · 1–5 — смена темы, для тех кто в теме</p>
-    </footer>
-
-    <div class="scroll-up"><a href="#home" aria-label="Наверх">⌃</a></div>
-
-    <script src="assets/js/index.js"></script>
-</body>
-</html>
->>>>>>> Stashed changes
